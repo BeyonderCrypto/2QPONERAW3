@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "tuqponeraw3_backend": {
+      "main": "src/tuqponeraw3_backend/main.mo",
+      "type": "motoko"
+    },
+    "tuqponeraw3_frontend": {
+      "dependencies": [
+        "tuqponeraw3_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/tuqponeraw3_frontend/src/index.html"
+      },
+      "source": [
+        "src/tuqponeraw3_frontend/assets",
+        "dist/tuqponeraw3_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
